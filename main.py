@@ -29,7 +29,7 @@ class App:
                     if index % 1 == 0: # only show every n steps, so visualizing the sort on a larger array doesnt take to long
                         vis.visualize(step[0], length, screen, step[1])
                         pygame.display.flip()
-                        pygame.time.delay(500)
+                        pygame.time.delay(10)
                 vis.visualize(arr, length, screen)
                 once = True
 
@@ -39,4 +39,4 @@ class App:
         pygame.quit()
 
 app = App()
-app.run(10, False, False)
+app.run(100, False, False)
